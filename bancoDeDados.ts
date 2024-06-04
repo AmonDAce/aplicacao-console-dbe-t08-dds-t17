@@ -1,10 +1,12 @@
 import TProduto from "./src/tipos/TProduto";
 
 type TBancoDeDados = {
+  proximoId: number;
   produtos: TProduto[];
 };
 
 const bancoDeDados: TBancoDeDados = {
+  proximoId: 3,
   produtos: [
     {
       id: 1,
@@ -14,7 +16,7 @@ const bancoDeDados: TBancoDeDados = {
     },
     {
       id: 2,
-      nome: "Geladera Top de Linha",
+      nome: "Geladeira Top de Linha",
       preco: 800000,
       quantidade: 10,
     },
